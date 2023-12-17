@@ -1,0 +1,110 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 29 Nov, 2023, 8:16:38 PM
+    Author     : Dillibabus
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: yellow;
+}
+nav{
+    background-color: black;
+    padding: 15px;
+}
+
+.head a:hover{
+    color: yellow;
+    background-color: transparent;
+}
+
+li,h1,ul{
+    display: inline;
+}
+
+ul{
+    margin-left: 73%;
+}
+
+select{
+    width: 60%;
+    padding: 15px;
+    border-radius: 40px;
+}
+
+.search{
+    padding: 50px;
+}
+
+.box{
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    display: inline-block;
+    background-color: black;
+    width: 220px;
+}
+
+.box a:hover{
+    background-color: black;
+    color:yellow;
+    cursor: pointer;
+}
+
+.services{
+
+    text-align: center;
+    margin-top: 20px;
+}
+.about{
+    color:black;
+    text-align: center;
+    margin-top:20px;
+    padding: 40px;
+}
+
+.contact{
+    background-color:black;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.pro a:hover{
+    color: yellow;
+    background-color: transparent;
+}
+
+a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:link{
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

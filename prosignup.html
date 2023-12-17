@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HOM⚡ES</title>
+        <link rel="icon" href="Bulb.png" type="image/png">
+    </head>
+    <body style="background-image: url('images/bg image.jpg'); background-size: 1600px">
+        <nav>
+            <center> <h1 style="font-size: 70px; margin-bottom: 10px;">HOM⚡ES</h1> </center>
+        </nav>
+        <form action="propage2.jsp" method="post">
+            <center>
+                <h2>Sign up</h2>
+                <table>
+                    <tr><td> <input type="text" name="text1" placeholder="name" required/></td></tr>
+                    <tr><td> <input type="password" name="text2" placeholder="password" maxlength="8" required/></td></tr>
+                    <tr><td> <input type="email" name="text3" placeholder="email" required/></td></tr>
+                    <tr><td> <input type="tel" name="text4" placeholder="phone" required maxlength="10"/></td></tr>
+                    <tr><td> <input type="number" name="text5" placeholder="id proof" required/></td></tr>
+                    <tr><td> <textarea id="freeform" name="text6" rows="4" cols="21" maxlength="50"
+                                       placeholder="address" style="resize: none" required></textarea></td></tr>
+                    <tr><td> <input type="text" name="text7" placeholder="city" required/></td></tr>
+                    <tr><td> <input type="text" name="text8" placeholder="landmark" required/></td></tr>
+                    <tr> <td> <input type="number" name="text9" placeholder="pincode" min="600001" max="600031" style="width: 170px"  required/></td></tr>
+                    <tr><td> Gender:<input type="radio" name="gender" value="Male" required>Male<input type="radio" name="gender" value="Female" required>Female</td></tr>
+                </table>
+                <br><br>
+                <table>
+                    <tr><td>  <input type="submit" value="submit" style="margin-right: 20px"/></td><td><input type="reset" value="cancel"/></td></tr>
+                </table>
+            </center>              
+        </form>
+    </body>
+</html>

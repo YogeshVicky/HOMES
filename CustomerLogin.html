@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HOM⚡ES</title>
+        <link rel="icon" href="BULB.png" type="image/png">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body style="background-image: url('images/bgi1.jpg'); background-size: 1600px; backdrop-filter: blur(10px);">
+        <div class="head">
+            <nav>
+                <h1>HOM⚡ES</h1>
+                <ul>
+                    <!--<li><a href="index.html" style="text-decoration: none; word-spacing: 10px"> Home </a> </li>-->
+                    <li> <a href="index.html" style="text-decoration: none; word-spacing: 20px ">Services </a></li>
+                    <li> <a href="index.html" style="text-decoration: none; word-spacing: 20px ">AboutUs </a></li>
+                    <li> <a href="index.html" style="text-decoration: none; word-spacing: 20px">Contact </a></li>
+                </ul>
+            </nav>
+        </div>
+
+    <center>
+        <div class="search">
+            <select id="redirectDropdown" onchange="redirectOnChange(this)">
+                <option></option>
+                <option value="index.html" style="font-size: 17px;">fan</option>
+                <option value="CustomerSignup.html" style="font-size: 17px;">light</option>
+                <option value="page3.html">3</option>
+                <option value="page4.html">4</option>
+                <option value="page5.html">5</option>
+                <option value="page6.html">6</option>
+            </select>
+        </div>
+    </center>
+
+    <script>
+        function redirectOnChange(selectElement) {
+            var selectedValue = selectElement.options[selectElement.selectedIndex].value;
+
+            if (selectedValue !== "") {
+                window.location.href = selectedValue;
+            }
+        }
+    </script>
+
+    <div class="services">
+        <div class="box">
+            <img src="images/swtbd1.jpg" width="220" height="220">
+            <a href="index.html" style="text-decoration: none"> Switch & Socket</a>
+
+        </div>
+        <div class="box">
+            <img src="images/fan2.jpg" width="220" height="220">
+            <a href="" style="text-decoration: none">Fan
+            </a>
+        </div>
+        <div class="box" >
+            <img src="images/led1.jpg" width="220" height="220">
+            <a href="" style="text-decoration: none">Light
+            </a>
+        </div>
+
+        <div class="box">
+            <img src="images/wire1.jpg" width="220" height="220">
+            <a href="" style="text-decoration: none">Wiring
+            </a>
+        </div>    
+    </div>
+    <div class="about us">
+        <h1 class="about">About Us</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores omnis reiciendis rerum, officiis voluptas voluptatum enim, et, delectus ducimus adipisci amet ipsam neque ipsum illo atque asperiores fuga fugiat? Voluptas.</p>
+
+    </div>
+    <div class="contact">
+        <div class="pro">
+            <a href="TandC.html" style="text-decoration: none; margin-left: 95%"> *T&C </a>
+        </div> 
+        <h4>Contact</h4>
+        <p>+91 889933377</p>
+        <p>homes@gmail.com</p>
+        <p style="margin-top: 30px; font-size: 15px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quasi dicta cupiditate dolores velit deleniti nostrum aperiam natus, doloribus odio doloremque? Molestiae, nostrum, alias repellendus commodi exercitationem cumque et corporis obcaecati nam sint aliquid impedit tenetur ad quod harum tempore.</p>
+
+
+    </div>
+</body>
+</html>

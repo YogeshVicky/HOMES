@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<style>
+    .pro a:hover{
+        color: blue;
+        background-color: transparent;
+    }
+    a:visited {
+        color: black;
+        background-color: transparent;
+    }
+    a:link{
+        color: black;
+    }
+    .but input{
+        background-color: #04AA6D;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    .but input:hover{
+        background-color: green;
+        color: white;
+    }
+    .login input{
+        height: 30px;
+        width: 240px;
+        border-radius: 30px;
+
+    }
+</style>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HOM⚡ES</title>
+        <link rel="icon" href="BULB.png" type="image/png">
+    </head>
+    <body style="background-image: url('images/bg image1.jpg'); background-size: 1650px">
+        <nav>
+            <center> <h1 style="font-size: 70px; margin-top: 12px">HOM⚡ES</h1> </center>
+        </nav>
+        <form action="propage1.jsp" method="post">
+            <center>
+                <span style="font-size: 50px;">👨🏽‍🔧 </span>
+                <h2>Pro Login</h2>
+                <div class="login">
+                    <table>
+                        <tr> <td><input type="text" name="text1" placeholder="Proname" style="text-align: center;" required/></td></tr>
+                        <tr> <td><input type="password" name="text2" placeholder="Password" style="text-align: center;" required/></td></tr>
+                    </table>
+                </div>
+                <br><br>
+                <div class= "but">
+                    <table>
+                        <tr><td>  <input type="submit" value="submit" style="margin-right: 20px"/></td>
+                            <td><input type="reset" value="cancel"/></td></tr>
+                    </table>
+                </div>
+            </center>              
+        </form> 
+    </body>
+</html>

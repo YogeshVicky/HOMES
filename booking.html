@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<style>
+    .proceed input{
+        background-color: black;
+        border: none;
+        color: greenyellow;
+        padding: 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border-radius: 10px;
+        width: 150px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .proceed input:hover{
+        background-color: green;
+        color: white;
+    }
+
+    .mybooking input[type="button"]{
+
+        height: 30px;
+        width: 120px;
+        margin-top: 20px;
+        margin-left: 89%;
+    }
+    .msg{
+        color: cyan;
+        margin-top: 5px;
+    }
+
+</style>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HOM⚡ES</title>
+        <link rel="icon" href="BULB.png" type="image/png">
+        <link rel="stylesheet" href="stylesbook.css">
+    </head>
+    <body style="background-image: url('images/bgi1.jpg'); background-size: 1400px; backdrop-filter: blur(10px);">
+        <div class="head">
+            <nav>
+                <h1>HOM⚡ES</h1>
+                <ul>
+                    <li> <a href="services.html" style="text-decoration: none; word-spacing: 10px;" >Services </a></li>
+                    <li> <a href="aboutus.html" style="text-decoration: none; word-spacing: 10px">AboutUs </a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <form action="booking.jsp" method="post">
+            <div class="book">
+                <center>
+
+                    <table style="margin-top:30px">
+                        <tr><td> Name:</td><td> <input type="text" name="text1" placeholder="name" style="width:180px; height: 20px; text-align: center" required/></td></tr>
+                        <tr><td> Phone: </td><td> <input type="tel" name="text2" placeholder="Enter 10 digit phone number" style= "width:180px; height: 20px; text-align: center" pattern="[0-9]{10}" required/></td></tr>
+                        <tr><td> Address : </td><td> <textarea id="freeform" name="text3" rows="4" cols="21" maxlength="50"
+                                                               placeholder="address" style="resize: none ;width:180px; text-align: center;" required></textarea></td></tr>
+                        <tr><td>Booking Date : </td><td><input type="date" name="date" style="width: 180px; height: 20px; text-align: center " required/></td></tr>
+                        <tr><td> Gender Preference :</td><td><input type="radio" name="gender" value="Male" style="margin-left:13px; margin-right: 13px" required>Male<input type="radio" name="gender" value="Female" style="margin-right:13px; margin-left: 13px" required>Female</td></tr>
+                    </table>
+                </center> </div><br>
+
+            <hr style="margin-top: 50px; margin-bottom: 30px">       
+            <center><h1 style="background-color: black; color : cyan; padding: 10px;margin-top: 10px; border-radius: 30px;padding: 15px">Service Categories</h1></center>
+            <hr style="margin-top: 30px; margin-bottom: 30px">
+
+            <div class="services">
+
+                <!-- ////////////////////////// SWITCH and SOCKETS //////////////////////// -->
+
+                <br><h3>switch and sockets</h3><br>
+
+                <div class="box">
+                    <img src="images/sock1.jpg" width="160" height="160">
+                    <span style="color:white">Sockets</span><br>
+                    <br><span style="color: greenyellow; font-weight: bold; font-size: 15px;">Rs. 150/-</span><br><br>
+                    <span style="color: greenyellow; font-weight: bold; font-size: 15px;">Time: 30 mins</span><br>
+
+                    <br><span style="color:white; font-size: 13px; margin-right: 10px">QTY:</span><input type="number" name="socket" style="width: 50px" min="0" value="0"/>
+
+                </div>
+
+                <div class="box">
+                    <img src="images/swtbd1.jpg" width="160" height="160">
+                    <span style="color:white">Switch</span><br>
+                    <br><span style="color: greenyellow; font-weight: bold; font-size: 15px;">Rs. 200/-</span><br><br>
+                    <span style="color: greenyellow; font-weight: bold; font-size: 15px;">Time: 45 mins</span><br>
+
+                    <br><span style="color:white; font-size: 13px; margin-right: 10px">QTY:</span><input type="number" name="switch" style="width: 50px" min="0" value="0"/>
+
+                </div>
+
+                <div class="box">
+                    <img src="images/reg1.jpg" width="160" height="160">
+                    <span style="color:white">Regulator replace</span><br>
+                    <br><span style="color: greenyellow; font-weight: bold; font-size: 15px;">Rs. 150/-</span><br><br>
+                    <span style="color: greenyellow; font-weight: bold; font-size: 15px;">Time: 30 mins</span><br>
+
+                    <br><span style="color:white; font-size: 13px; margin-right: 10px">QTY:</span><input type="number" name="regulator" style="width: 50px" min="0" value="0"/>
+
+                </div>
+
+                <div class="box">
+                    <img src="images/plug1.jpg" width="160" height="160">
+                    <span style="color:white">Plug replace</span><br>
+                    <br><span style="color: greenyellow; font-weight: bold; font-size: 15px;">Rs. 100/-</span><br><br>
+                    <span style="color: greenyellow; font-weight: bold; font-size: 15px;">Time: 30 mins</span><br>
+
+                    <br><span style="color:white; font-size: 13px; margin-right: 10px">QTY:</span><input type="number" name="plug" style="width: 50px" min="0" value="0"/>
+
+                </div>
+
+                <!--  ///////////////////////////////// FAN ////////////////////////////// -->
+
+                <hr style="margin-top: 50px;">
+                <br><h3>fans</h3><br>
+                <div class="box">
+                    <img src="images/fan2.jpg" width="160" height="160">
+                    <span style="color:white">Ceiling Fan</span><br>
+                    <br><span style="color: greenyellow; font-weight: bold; font-size: 15px;">Rs. 250/-</span><br><br>
+                    <span style="color: greenyellow; font-weight: bold; font-size: 15px;">Time: 45 mins</span><br>
+
+                    <br><span style="color:white; font-size: 13px; margin-right: 10px">QTY:</span><input type="number" name=cfan style="width: 50px" min="0" value="0"/>
+                </div>
+
+                <div class="box">
+                    <img src="images/tab.jpg" width="160" height="160">
+                    <span style="color:white">Table Fan</span><br>
+                    <br><span style="color: greenyellow; font-weight: bold; font-size: 15px;">Rs. 200/-</span><br><br>
+                    <span style="color: greenyellow; font-weight: bold; font-size: 15px;">Time: 45 mins</span><br>
+
+                    <br><span style="color:white; font-size: 13px; margin-right: 10px">QTY:</span><input type="number" name="tfan" style="width: 50px" min="0" value="0"/>
+
+                </div>
+
+                <div class="box">
+                    <img src="images/bdlc1.jpg" width="160" height="160">
+                    <span style="color:white">BLDC Fan</span><br>
+                    <br><span style="color: greenyellow; font-weight: bold; font-size: 15px;">Rs. 350/-</span><br><br>
+                    <span style="color: greenyellow; font-weight: bold; font-size: 15px;">Time: 50 mins</span><br>
+
+                    <br><span style="color:white; font-size: 13px; margin-right: 10px">QTY:</span><input type="number" name="bfan" style="width: 50px" min="0" value="0"/>
+
+                </div>
+
+                <div class="box">
+                    <img src="images/exhaust1.jpg" width="160" height="160">
+                    <span style="color:white">Exhaust Fan</span><br>
+                    <br><span style="color: greenyellow; font-weight: bold; font-size: 15px;">Rs. 175/-</span><br><br>
+                    <span style="color: greenyellow; font-weight: bold; font-size: 15px;">Time: 40 mins</span><br>
+
+                    <br><span style="color:white; font-size: 13px; margin-right: 10px">QTY:</span><input type="number" name="efan" style="width: 50px" min="0" value="0"/>
+
+                </div>
+
+                <!-- ///////////////////////////////// LIGHTS ////////////////////////////////////// -->
+
+                <hr style="margin-top: 50px;">
+                <br><h3>lights</h3><br>
+                <div class="box">
+                    <img src="images/cfl1.jpg" width="160" height="160">
+                    <span style="color:white">CFL / LED with Holder</span><br>
+                    <br><span style="color: greenyellow; font-weight: bold; font-size: 15px;">Rs. 150/-</span><br><br>
+                    <span style="color: greenyellow; font-weight: bold; font-size: 15px;">Time: 20 mins</span><br>
+
+                    <br><span style="color:white; font-size: 13px; margin-right: 10px">QTY:</span><input type="number" name="cfl" style="width: 50px" min="0" value="0"/>
+
+                </div>
+
+                <div class="box">
+                    <img src="images/tube1.jpg" width="160" height="160">
+                    <span style="color:white">LED Tube Lights</span><br>
+                    <br><span style="color: greenyellow; font-weight: bold; font-size: 15px;">Rs. 175/-</span><br><br>
+                    <span style="color: greenyellow; font-weight: bold; font-size: 15px;">Time: 45 mins</span><br>
+
+                    <br><span style="color:white; font-size: 13px; margin-right: 10px">QTY:</span><input type="number" name="led" style="width: 50px" min="0" value="0"/>
+
+                </div>
+
+                <div class="box">
+                    <img src="images/spot1.jpg" width="160" height="160">
+                    <span style="color:white">Spot Lights</span><br>
+                    <br><span style="color: greenyellow; font-weight: bold; font-size: 15px;">Rs. 250/-</span><br><br>
+                    <span style="color: greenyellow; font-weight: bold; font-size: 15px;">Time: 60 mins</span><br>
+
+                    <br><span style="color:white; font-size: 13px; margin-right: 10px">QTY:</span><input type="number" name="splight" style="width: 50px" min="0" value="0"/>
+
+                </div>
+
+                <!-- ////////////////////////////////// WIRING /////////////////////////////////////// -->
+
+                <hr style="margin-top: 50px;">
+                <br><h3>wiring</h3><br>
+                <div class="box">
+                    <img src="images/wire1.jpg" width="160" height="160">
+                    <span style="color:white">Wiring 5mts</span><br>
+                    <br><span style="color: greenyellow; font-weight: bold; font-size: 15px;">Rs. 350/-</span><br><br>
+                    <span style="color: greenyellow; font-weight: bold; font-size: 15px;">Time: --</span><br>
+
+                    <br><span style="color:white; font-size: 13px; margin-right: 10px">QTY:</span><input type="number" name="wire5" style="width: 50px" min="0" value="0"/>
+
+                </div>
+
+                <div class="box">
+                    <img src="images/wire1.jpg" width="160" height="160">
+                    <span style="color:white">Wiring 10mts</span><br>
+                    <br><span style="color: greenyellow; font-weight: bold; font-size: 15px;">Rs. 550/-</span><br><br>
+                    <span style="color: greenyellow; font-weight: bold; font-size: 15px;">Time: --</span><br>
+
+                    <br><span style="color:white; font-size: 13px; margin-right: 10px">QTY:</span><input type="number" name="wire10" style="width: 50px" min="0" value="0"/>
+
+                </div>
+
+                <div class="box">
+                    <img src="images/wire1.jpg" width="160" height="160">
+                    <span style="color:white">Wiring more than 10mts</span><br>
+                    <br><span style="color: greenyellow; font-weight: bold; font-size: 15px;">Rs. 550 + extra charges</span><br><br>
+                    <span style="color: greenyellow; font-weight: bold; font-size: 15px;">Time: --</span><br>
+
+                    <br><span style="color:white; font-size: 13px; margin-right: 10px">QTY:</span><input type="number" name="wirelong" style="width: 50px" min="0" value="0"/>
+
+                </div> 
+            </div>
+            <hr style="margin-top: 50px;">
+
+
+            <div class="proceed">
+                <center>
+                    <input type="submit" value="Proceed Booking" />
+                    <input type="button" value="Back" onclick="redirectToIndex()" />
+                </center>
+            </div>
+
+            <script>
+                function redirectToIndex() {
+                    window.location.href = 'index.html';
+                }
+            </script>
+        </form>    
+        <div class="contact">
+            <div class="pro">
+                <a href="TandC.html" style="text-decoration: none; margin-left: 95%"> *T&C </a>
+            </div> 
+            <div class="msg">
+            <h4>Contact</h4>
+            <p>+91 7010293173</p>
+            <p>homes@gmail.com</p>
+            <p>WhatsApp: 8939510275</p>
+
+            <p style="margin-top: 30px; font-size: 15px;">* Before proceeding with your booking, kindly take a moment to review our terms and conditions 
+                for a comprehensive understanding of our policies and guidelines. 
+            </p>
+            </div>
+        </div>
+    </body>
+</html>
